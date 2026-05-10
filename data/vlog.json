@@ -1,0 +1,12 @@
+{
+  "title": "Vlog",
+  "subtitle": "写真1枚＋一言（ストーリー風）",
+  "entries": [
+    {
+      "id": "v1",
+      "caption": "今日の一行は data/vlog.json から更新。",
+      "image": null,
+      "date": "2026-05-10"
+    }
+  ]
+}

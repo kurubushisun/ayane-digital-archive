@@ -1,0 +1,18 @@
+{
+  "albumTitle": "Roots",
+  "subtitle": "Album tracklist",
+  "tracks": [
+    {
+      "id": "t1",
+      "number": 1,
+      "title": "幼少期",
+      "summary": "ダンスや音楽に触れ始めた頃の記憶。"
+    },
+    {
+      "id": "t2",
+      "number": 2,
+      "title": "学生〜現在",
+      "summary": "学びとサークル、バイトが交差する日常。（後から JSON で追記）"
+    }
+  ]
+}

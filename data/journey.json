@@ -1,0 +1,33 @@
+{
+  "title": "Journey",
+  "subtitle": "学習・大学生活・バイトを一本のタイムラインに",
+  "events": [
+    {
+      "id": "e1",
+      "period": "2024 —",
+      "label": "Web開発",
+      "type": "learning",
+      "headline": "Next.js と設計にハマる",
+      "detail": "試行錯誤やエラー解決もここにログしていく予定。",
+      "highlight": false
+    },
+    {
+      "id": "e2",
+      "period": "大学",
+      "label": "Revolve / KCS / 矢上祭実行委員",
+      "type": "campus",
+      "headline": "企画と現場の両方",
+      "detail": "成功だけでなく、詰まった瞬間も含めて記録。",
+      "highlight": true
+    },
+    {
+      "id": "e3",
+      "period": "バイト",
+      "label": "Starbucks",
+      "type": "work",
+      "headline": "ラテアートと接客",
+      "detail": "Coffee Log と連動させる想定。",
+      "highlight": false
+    }
+  ]
+}

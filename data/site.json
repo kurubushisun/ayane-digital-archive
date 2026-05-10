@@ -1,0 +1,28 @@
+{
+  "title": "Ayane's Digital Archive",
+  "tagline": "日々アップデートしていく自分を可視化する。ここにいた証明と、自分を客観視するためのライフログ。",
+  "hero": {
+    "labelEn": "DIGITAL × LIFE",
+    "titleJa": "このアーカイブとは？",
+    "lead": "オンラインで記録し、オフラインの体感とつなぐ。セクションはすべて /data の JSON から読み込み、後から写真や長文も差し込める土台です。",
+    "cta": "セクションへ進む",
+    "pickup": {
+      "magazineLabel": "WEB MAGAZINE",
+      "sectionLabel": "PICK UP",
+      "category": "Roots",
+      "date": "2026.05.10",
+      "title": "軌跡をアルバムのように並べる",
+      "tags": ["#ライフログ", "#自己理解"]
+    }
+  },
+  "tags": [
+    "#Roots",
+    "#Journey",
+    "#Artifacts",
+    "#Now",
+    "#Vlog",
+    "#ダンス",
+    "#音楽",
+    "#エンジニアリング"
+  ]
+}

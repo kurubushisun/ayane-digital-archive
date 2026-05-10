@@ -1,0 +1,27 @@
+{
+  "title": "Now Playing & Interests",
+  "spotify": {
+    "connected": false,
+    "message": "Spotify API 連携は次のステップ。ここに「今聴いている曲」「月間ランキング」「ジャンル分析」を表示予定。"
+  },
+  "coffee": {
+    "title": "Coffee Log",
+    "entries": [
+      {
+        "id": "c1",
+        "title": "ラテアート練習",
+        "body": "ハート → チューリップの遷移を記録していく。"
+      },
+      {
+        "id": "c2",
+        "title": "お気に入りカスタム",
+        "body": "豆のテイスティングメモもこの配列に追加。"
+      }
+    ]
+  },
+  "community": [
+    { "id": "org1", "name": "大学", "role": "学生" },
+    { "id": "org2", "name": "サークル", "role": "Revolve ほか" },
+    { "id": "org3", "name": "Starbucks", "role": "バイト" }
+  ]
+}
