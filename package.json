@@ -1,12 +1,14 @@
 {
-  "name": "ayane-digital-archive",
+  "name": "kurubushi-digital-archive",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=20.9.0"
   },
   "scripts": {
+    "clean": "rm -rf .next",
     "dev": "next dev",
+    "dev:clean": "npm run clean && next dev",
     "dev:3001": "next dev -p 3001",
     "build": "next build",
     "start": "next start"

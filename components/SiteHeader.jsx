@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
   Disc3,
   Map,
@@ -94,19 +93,16 @@ export function SiteHeader({ title, tagline }) {
 
             <nav className="flex flex-wrap gap-1 border-t border-border/60 pt-3 lg:border-t-0 lg:pt-0">
               {nav.map(({ href, label, icon: Icon }) => (
-                <motion.a
+                <a
                   key={href}
                   href={href}
                   className={cn(
-                    "inline-flex items-center gap-1.5 rounded-full border border-transparent px-3 py-1.5 text-[11px] font-medium text-muted-foreground",
-                    "hover:border-accent/35 hover:bg-white/60 hover:text-foreground"
+                    "inline-flex items-center gap-1.5 rounded-full border border-transparent px-3 py-1.5 text-[11px] font-medium text-muted-foreground transition-[transform,colors] hover:-translate-y-px hover:border-accent/35 hover:bg-white/60 hover:text-foreground active:scale-[0.98]"
                   )}
-                  whileHover={{ y: -1 }}
-                  whileTap={{ scale: 0.98 }}
                 >
                   <Icon className="size-3.5 shrink-0 text-accent" aria-hidden />
                   {label}
-                </motion.a>
+                </a>
               ))}
             </nav>
           </div>

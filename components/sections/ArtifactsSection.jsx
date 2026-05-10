@@ -41,8 +41,7 @@ export function ArtifactsSection({ data }) {
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.06, duration: 0.4 }}
               whileHover={{ y: -4 }}
             >

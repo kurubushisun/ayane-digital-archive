@@ -4,22 +4,22 @@
 
 @layer base {
   :root {
-    /* Brand */
+    /* Brand — #41C8D6 (accent) / #098B9B (primary, deep) */
     --cream: 44 69% 85%;
-    --cyan: 185 63% 55%;
-    --cyan-deep: 185 55% 42%;
+    --cyan: 186 64% 55%;
+    --cyan-deep: 187 89% 32%;
 
     --background: 44 62% 92%;
-    --foreground: 200 28% 14%;
+    --foreground: 186 22% 14%;
     --card: 0 0% 100%;
-    --card-foreground: 200 28% 14%;
+    --card-foreground: 186 22% 14%;
     --muted: 44 38% 88%;
-    --muted-foreground: 200 14% 38%;
-    --accent: 185 63% 55%;
+    --muted-foreground: 186 14% 38%;
+    --accent: 186 64% 55%;
     --accent-foreground: 0 0% 100%;
-    --primary: 185 55% 42%;
-    --primary-foreground: 0 0% 100%;
-    --border: 185 22% 78%;
+    --primary: 187 89% 32%;
+    --primary-foreground: 44 69% 95%;
+    --border: 186 35% 78%;
     --radius: 0.625rem;
   }
 

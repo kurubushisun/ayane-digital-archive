@@ -9,7 +9,16 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
-        serif: ["var(--font-serif-jp)", "ui-serif", "Georgia", "serif"],
+        serif: [
+          "ui-serif",
+          "Hiragino Mincho ProN",
+          "Hiragino Mincho",
+          "Yu Mincho",
+          "YuMincho",
+          "Noto Serif JP",
+          "Noto Serif",
+          "serif",
+        ],
         mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
       },
       colors: {

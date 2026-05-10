@@ -28,7 +28,7 @@ export default function HomePage() {
       </main>
       <footer className="border-t border-border/80 bg-muted/40 py-12 text-center">
         <p className="font-serif text-sm text-foreground">
-          Ayane&apos;s Digital Archive
+          KURUBUSHI&apos;s Digital Archive
         </p>
         <p className="mt-2 font-mono text-[11px] text-muted-foreground">
           コンテンツは /data の JSON から読み込み

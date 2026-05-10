@@ -13,7 +13,7 @@ export function HeroBand({ hero }) {
         className="pointer-events-none absolute inset-0 bg-hero-glow opacity-90"
         aria-hidden
       />
-      <div className="pointer-events-none absolute -right-24 top-1/2 size-[420px] -translate-y-1/2 rounded-full border border-foreground/6 bg-[radial-gradient(circle,hsl(var(--cyan)/0.12)_0%,transparent_65%)]" />
+      <div className="pointer-events-none absolute -right-24 top-1/2 size-[420px] -translate-y-1/2 rounded-full border border-foreground/6 bg-[radial-gradient(circle,hsl(var(--cyan)_/_12%)_0%,transparent_65%)]" />
       <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-24">
         <div className="lg:col-span-6">
           <motion.p
@@ -91,12 +91,12 @@ export function HeroBand({ hero }) {
           </div>
 
           <motion.div
-            className="relative overflow-hidden rounded-2xl border border-border/90 bg-gradient-to-br from-slate-900 via-slate-900 to-[hsl(185,45%,22%)] p-6 text-[#F4E6C0] shadow-xl sm:p-8"
+            className="relative overflow-hidden rounded-2xl border border-[#41C8D6]/40 bg-gradient-to-br from-[#098B9B] to-[#41C8D6] p-6 text-[#F4E6C0] shadow-xl sm:p-8"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <div className="pointer-events-none absolute -right-16 -top-16 size-56 rounded-full bg-[radial-gradient(circle,hsl(var(--cyan)/0.55)_0%,transparent_70%)] blur-2xl" />
+            <div className="pointer-events-none absolute -right-16 -top-16 size-56 rounded-full bg-[radial-gradient(circle,hsl(var(--cyan)_/_55%)_0%,transparent_70%)] blur-2xl" />
             <div className="relative flex items-start justify-between gap-4 border-b border-white/10 pb-4">
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#41C8D6]">
@@ -117,8 +117,8 @@ export function HeroBand({ hero }) {
                 </p>
                 <p className="mt-1 font-mono text-sm">{pickup?.date}</p>
               </div>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-white/10 bg-black/30 sm:col-span-3">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-white/20 bg-[#098B9B]/35 sm:col-span-3">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#098B9B]/85 to-transparent" />
                 <div className="flex size-full items-center justify-center p-4 text-center font-serif text-xs leading-relaxed text-[#F4E6C0]/75">
                   画像エリア
                   <br />
