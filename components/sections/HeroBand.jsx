@@ -67,18 +67,23 @@ export function HeroBand({ hero }) {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.45 }}
           >
-            <svg viewBox="0 0 320 200" className="text-foreground/25">
-              <circle cx="120" cy="120" r="68" fill="none" stroke="currentColor" strokeWidth="1.2" />
-              <circle cx="120" cy="120" r="42" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6" />
-              <path
-                d="M52 148c18-26 44-44 76-48"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-              />
-              <circle cx="248" cy="56" r="6" fill="none" stroke="currentColor" strokeWidth="1" />
-              <path d="M232 72l24 30M248 52v28" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
+            <svg viewBox="0 0 240 160" className="w-full text-foreground/20">
+              {/* 同心円 */}
+              <circle cx="80" cy="80" r="64" fill="none" stroke="currentColor" strokeWidth="1" />
+              <circle cx="80" cy="80" r="44" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.7" />
+              <circle cx="80" cy="80" r="24" fill="none" stroke="currentColor" strokeWidth="0.6" opacity="0.5" />
+              {/* 中心点 */}
+              <circle cx="80" cy="80" r="2" fill="currentColor" opacity="0.4" />
+              {/* 十字線 */}
+              <line x1="80" y1="12" x2="80" y2="148" stroke="currentColor" strokeWidth="0.6" opacity="0.3" strokeDasharray="3 4" />
+              <line x1="12" y1="80" x2="148" y2="80" stroke="currentColor" strokeWidth="0.6" opacity="0.3" strokeDasharray="3 4" />
+              {/* 右側の小要素 */}
+              <circle cx="190" cy="44" r="8" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6" />
+              <circle cx="190" cy="44" r="2" fill="currentColor" opacity="0.4" />
+              <line x1="190" y1="56" x2="190" y2="80" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" opacity="0.4" />
+              <line x1="178" y1="68" x2="202" y2="92" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" opacity="0.3" />
+              {/* 右下のブラケット風 */}
+              <path d="M160 120 L180 120 L180 140" fill="none" stroke="currentColor" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round" opacity="0.35" />
             </svg>
           </motion.div>
         </div>
@@ -118,18 +123,19 @@ export function HeroBand({ hero }) {
                 <p className="mt-1 font-mono text-sm">{pickup?.date}</p>
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-white/20 bg-[#098B9B]/35 sm:col-span-3">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#098B9B]/85 to-transparent" />
                 {pickup?.image ? (
                   <img
                     src={pickup.image}
                     alt={pickup.title}
-                    className="h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-cover"
+                    style={{ imageRendering: "auto" }}
                   />
                 ) : (
                   <div className="flex size-full items-center justify-center p-4 text-center font-serif text-xs leading-relaxed text-[#F4E6C0]/75">
                     画像エリア
                   </div>
                 )}
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#098B9B]/70 via-transparent to-transparent" />
               </div>
             </div>
             <div className="relative mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-[#41C8D6]/90">
