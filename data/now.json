@@ -1,8 +1,19 @@
 {
   "title": "Now Playing & Interests",
   "spotify": {
-    "connected": false,
-    "message": "Spotify API 連携は次のステップ。ここに「今聴いている曲」「月間ランキング」「ジャンル分析」を表示予定。"
+    "profileUrl": "https://open.spotify.com/user/c3a7dfo8o3c15e8fh1gmmqaz4",
+    "embeds": [
+      {
+        "url": "https://open.spotify.com/track/53MperjYirHgPZhigpaW45",
+        "label": "最近のリピ曲",
+        "type": "track"
+      },
+      {
+        "url": "https://open.spotify.com/playlist/54rYkFFRCLqIXeo9enxWoi",
+        "label": "お気に入りプレイリスト",
+        "type": "playlist"
+      }
+    ]
   },
   "coffee": {
     "title": "Coffee Log",
@@ -10,7 +21,8 @@
       {
         "id": "c1",
         "title": "ラテアート練習",
-        "body": "ハート → チューリップの遷移を記録していく。"
+        "body": "ハート → チューリップの遷移を記録していく。",
+        "image": "/latteart.JPG"
       },
       {
         "id": "c2",

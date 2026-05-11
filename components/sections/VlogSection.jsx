@@ -30,7 +30,8 @@ export function VlogSection({ data }) {
             key={entry.id}
             className="mb-4 break-inside-avoid"
             initial={{ opacity: 0, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ delay: i * 0.05, duration: 0.35 }}
             whileHover={{ scale: 1.01 }}
           >

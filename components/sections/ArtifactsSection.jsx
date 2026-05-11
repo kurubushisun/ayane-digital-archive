@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Image from "next/image"; // 画像を表示するための機能を追加
 
 const kindIcon = {
   Blender: Box,
@@ -66,8 +67,26 @@ export function ArtifactsSection({ data }) {
                   <CardDescription>{item.kind}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex aspect-video items-center justify-center rounded-xl border border-dashed border-accent/25 bg-muted/50 text-center text-xs text-muted-foreground">
-                    サムネ・埋め込み用プレースホルダー
+                  <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-xl border border-dashed border-accent/25 bg-muted/50 text-center text-xs text-muted-foreground">
+                    {item.image ? (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : item.audio ? (
+                      <div className="flex w-full flex-col items-center gap-3 px-4">
+                        <Music2 className="size-8 text-accent/60" />
+                        <audio
+                          controls
+                          src={item.audio}
+                          className="w-full max-w-xs rounded-lg"
+                          style={{ accentColor: "var(--accent)" }}
+                        />
+                      </div>
+                    ) : (
+                      "サムネ・埋め込み用プレースホルダー"
+                    )}
                   </div>
                   <p className="mt-3 text-sm text-muted-foreground">{item.note}</p>
                 </CardContent>

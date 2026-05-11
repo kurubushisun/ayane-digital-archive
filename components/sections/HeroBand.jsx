@@ -119,13 +119,17 @@ export function HeroBand({ hero }) {
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-white/20 bg-[#098B9B]/35 sm:col-span-3">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#098B9B]/85 to-transparent" />
-                <div className="flex size-full items-center justify-center p-4 text-center font-serif text-xs leading-relaxed text-[#F4E6C0]/75">
-                  画像エリア
-                  <br />
-                  <span className="mt-2 block font-mono text-[10px] text-[#F4E6C0]/45">
-                    JSON に追加予定
-                  </span>
-                </div>
+                {pickup?.image ? (
+                  <img
+                    src={pickup.image}
+                    alt={pickup.title}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="flex size-full items-center justify-center p-4 text-center font-serif text-xs leading-relaxed text-[#F4E6C0]/75">
+                    画像エリア
+                  </div>
+                )}
               </div>
             </div>
             <div className="relative mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-[#41C8D6]/90">

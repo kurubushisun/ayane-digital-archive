@@ -5,16 +5,18 @@
     {
       "id": "a1",
       "kind": "Blender",
-      "title": "WIP: シーン構築中",
-      "note": "完成前のスクショもここに置けるようにする。",
-      "status": "wip"
+      "title": "プレゼントボックス",
+      "note": "チュートリアル動画を参考に作成",
+      "status": "wip",
+      "image": "/blender.png"
     },
     {
       "id": "a2",
       "kind": "Audio",
-      "title": "MIX 音源プレースホルダー",
+      "title": "Angel7-梓川　cover",
       "note": "ファイルパスやリンクは JSON で差し替え。",
-      "status": "draft"
+      "status": "draft",
+      "audio": "/Angel7.mp3"
     }
   ]
 }
